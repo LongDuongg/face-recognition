@@ -65,8 +65,8 @@ def run():
 
 
 def rename():
-    dp = "./dataset/test"
-    # dp = "./dataset/train"
+    # dp = "./dataset/test"
+    dp = "./dataset/train"
     # dp = "./dataset/valid"
 
     classes = ["Long", "Phuc", "Quoc"]
