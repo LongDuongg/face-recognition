@@ -48,6 +48,8 @@ def convert(input_folder_path, output_folder_path):
         txt_outfile.close()
 
 
+# convert json label files to txt label files
+# Long_Label => long-labels
 def run():
     # dp = "./dataset/test"
     # dp = "./dataset/train"
@@ -64,6 +66,8 @@ def run():
         convert(input_folder_path, output_folder_path)
 
 
+# prefix dataset file name with class name
+# z1234_roi1.jpg => long_z1234_roi1.jpg
 def rename():
     # dp = "./dataset/test"
     # dp = "./dataset/train"
@@ -87,4 +91,4 @@ def rename():
 
 
 # run()
-rename()
+# rename()
