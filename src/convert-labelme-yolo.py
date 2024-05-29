@@ -50,8 +50,8 @@ def convert(input_folder_path, output_folder_path):
 
 def run():
     # dp = "./dataset/test"
-    dp = "./dataset/train"
-    # dp = "./dataset/valid"
+    # dp = "./dataset/train"
+    dp = "./dataset/valid"
 
     classes = ["Long", "Phuc", "Quoc"]
 
