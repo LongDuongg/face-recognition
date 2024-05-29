@@ -1,0 +1,5 @@
+name: face-recognition
+channels:
+  - defaults
+dependencies:
+  - python
