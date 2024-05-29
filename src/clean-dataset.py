@@ -64,4 +64,27 @@ def run():
         convert(input_folder_path, output_folder_path)
 
 
-run()
+def rename():
+    dp = "./dataset/test"
+    # dp = "./dataset/train"
+    # dp = "./dataset/valid"
+
+    classes = ["Long", "Phuc", "Quoc"]
+
+    def folder_names(cls):
+        txt_folder_name = cls.lower() + "-" + "labels"
+        json_folder_name = cls + "_" + "Label"
+        return (cls, txt_folder_name, json_folder_name)
+
+    for cls in classes:
+        for folder_name in folder_names(cls):
+            for file_name in os.listdir(os.path.join(dp, folder_name)):
+                new_file_name = cls.lower() + "_" + file_name
+                os.rename(
+                    os.path.join(dp, folder_name, file_name),
+                    os.path.join(dp, folder_name, new_file_name),
+                )
+
+
+# run()
+rename()
