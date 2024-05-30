@@ -23,6 +23,9 @@ def labelme_to_yolo_box(top_left, bottom_right, img_width, img_height):
     return (x_center, y_center, width, height)
 
 
+LABEL_DICT = {"Long": 0, "Phuc": 1, "Quoc": 2}
+
+
 def convert(input_folder_path, output_folder_path):
     for json_file_name in os.listdir(input_folder_path):
         json_file_path = input_folder_path + "/" + json_file_name
@@ -41,7 +44,12 @@ def convert(input_folder_path, output_folder_path):
             data["imageHeight"],
         )
 
-        txt_data = shape["label"] + " " + " ".join([str(v) for v in yolo_box]) + "\n"
+        txt_data = (
+            str(LABEL_DICT[shape["label"]])
+            + " "
+            + " ".join([str(v) for v in yolo_box])
+            + "\n"
+        )
 
         txt_outfile = open(txt_file_path, "w")
         txt_outfile.write(txt_data)
