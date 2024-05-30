@@ -1,5 +1,16 @@
 name: face-recognition
 channels:
   - defaults
+  - conda-forge
+  - pytorch
 dependencies:
   - python
+  - ultralytics
+  - opencv
+  - pytorch
+  - pip:
+      - open-contrib-python
+      - torch
+      - opencv-python
+      - thop
+      - torchvision

@@ -1,0 +1,10 @@
+path: ./dataset-yolo/ # dataset root dir
+train: images/train # train images (relative to 'path')
+val: images/val # val images (relative to 'path')
+test: images/test # test images (optional)
+
+# classes
+names:
+  0: Long
+  1: Phuc
+  2: Quoc
