@@ -8,6 +8,7 @@ dependencies:
   - ultralytics
   - opencv
   - pytorch
+  - pip
   - pip:
       - open-contrib-python
       - torch
