@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 import albumentations as alb
+import tensorflow as tf
 from tensorflow import keras
 from keras.models import load_model
 
@@ -10,6 +11,8 @@ from keras.models import load_model
 def performFaceDetection(vid):
     facetracker = load_model("Face_Detection.h5")
     facetracker.summary()
+    # facerecog = load_model("Face_Recognition.keras")
+    # facerecog.summary()
 
     size = 450
 
