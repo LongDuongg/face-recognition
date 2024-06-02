@@ -4,14 +4,16 @@ channels:
   - conda-forge
   - pytorch
 dependencies:
-  - python
+  - python=3.11
   - ultralytics
   - opencv
   - pytorch
   - pip
   - pip:
-      - open-contrib-python
+      - tensorflow=2.15
+      - opencv-contrib-python
       - torch
-      - opencv-python
+      - opencv-python=4.8.0.74
       - thop
       - torchvision
+      - albumentations

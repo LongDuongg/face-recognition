@@ -2,7 +2,7 @@
 
 # raw dataset: Data_Test, Data_Train, Data_Validation
 
-# detection dataset: Data_Augmented => dataset-detection (Long's format)
+# detection dataset: Data_Augmented => dataset-detection (Long's format), imgsz = 450
 
 # classification dataset: Cropped_Face_Images => dataset-yolov8-cls (yolo format)
 
