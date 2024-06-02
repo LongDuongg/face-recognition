@@ -8,7 +8,7 @@ from keras.models import load_model
 
 
 def performFaceDetection(vid):
-    facetracker = load_model("Face_Detection_2.keras")
+    facetracker = load_model("Face_Detection.h5")
     facetracker.summary()
 
     size = 450
