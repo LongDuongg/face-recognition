@@ -8,6 +8,8 @@
 
 # detect yolov8
 
+note: dataset-yolov8-detect.yaml must be placed at the root folder
+
 `yolo detect train data=dataset-yolov8-detect.yaml model=yolov8n.yaml save_period=5 imgsz=640 epochs=10`
 
 # train classify yolov8
