@@ -3,6 +3,8 @@ train: train/images
 val: val/images
 test: test/images
 
+nc: 1
+
 # class names
 names:
   0: face
