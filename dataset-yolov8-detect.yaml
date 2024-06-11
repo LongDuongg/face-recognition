@@ -5,6 +5,4 @@ test: test/images
 
 # class names
 names:
-  0: long
-  1: phuc
-  2: quoc
+  0: face

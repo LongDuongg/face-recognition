@@ -98,5 +98,26 @@ def rename():
                 )
 
 
+# make class in .txt file to 0 instead of 0 1 2
+def make_face_class_only():
+    # dp = "./datasets/dataset-yolov8-detect/test/labels"
+    dp = "./datasets/dataset-yolov8-detect/train/labels"
+    # dp = "./datasets/dataset-yolov8-detect/val/labels"
+
+    def manual_replace(s, char, index):
+        return s[:index] + char + s[index + 1 :]
+
+    for file_name in os.listdir(dp):
+        print(file_name)
+        with open(dp + "/" + file_name, "r+") as f:
+            line = f.read()
+            line = manual_replace(line, "0", 0)
+            f.seek(0)
+            f.write(line)
+            f.truncate()
+            f.close()
+
+
 # run()
 # rename()
+# make_face_class_only()
